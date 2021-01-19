@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+* {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	background-color: #c9cac7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+	padding: 5px 15px;
+	font-size: 15px;
+	background-color: #022f55;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.quiz-app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+	background-color: #efefef;
+	padding: 10px 20px;
+	box-shadow: 0 0 10px #949494;
+	color: #022f55;
+	border-radius: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.question {
+	padding: 5px;
+	margin: 5px 20px;
+	width: 400px;
+}
+@media screen and (max-width: 500px) {
+	.question {
+		width: 90%;
+	}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.option {
+	background-color: #efefef;
+	padding: 5px;
+	margin: 5px 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #949494;
+}
+
+.option-label {
+	background-color: #efefef;
+}
+
+.radio {
+	margin-right: 10px;
+}
+
+.loading {
+	margin-top: 20px;
+	font-size: 30px;
+	text-align: center;
 }
