@@ -3,6 +3,7 @@ import "./App.css";
 import { getQuizDetails } from "./Services/getQuizDetails";
 import { Question_Type } from "./Types/Quiz_Types";
 import Question from "./Components/Question";
+import { initNotification } from "./Services/firebaseService";
 
 function App() {
 	const [quiz, setQuiz] = useState<Question_Type[]>([]);
@@ -17,6 +18,7 @@ function App() {
 			setQuiz(data);
 		}
 		getData();
+		initNotification();
 	}, []);
 
 	const handleSubmit = (
